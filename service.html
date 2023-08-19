@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/54e73dd607.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body{
+        overflow-x: hidden;
+        background-color: rgb(148, 183, 140);
+    }
+
+    .right {
+        display: block;
+        width: 38%;
+        margin: 2px 1254px;
+        padding: 2px;
+    }
+
+    .navbar {
+        display: inline-block;
+        margin: -15 37 19 26;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .navbar li {
+
+        display: inline-block;
+        font-size: 18 px;
+        cursor: pointer;
+    }
+
+    .navbar li a {
+        color: rgb(7, 6, 6);
+        font-weight: 600;
+        text-decoration: underline;
+        padding: 30px 0px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(110, 110, 147);
+    }
+
+    .navbar li img:hover {
+        text-decoration: underline;
+        color: rgb(110, 110, 147);
+    }
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        padding: 0 8%;
+    }
+
+    .container h1{
+        text-align: center;
+        padding-top: 10%;
+        margin-bottom: 60px;
+        font-weight: 600;
+        position: relative;
+    }
+
+    .container h1::after{
+        content: '';
+        background-color: rgb(69, 2, 4);
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        grid-gap: 30px;
+    }
+
+    .service{
+        text-align: center;
+        padding: 25px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        background: transparent;
+        
+    }
+
+    .service i{
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #140b6f;
+    }
+
+    .service h2{
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .service:hover{
+        background: #54599e;
+        color: #fff;
+        transform: scale(1.05);
+    }
+    .service:hover i{
+        color: white;
+    }
+
+
+</style>
+<body>
+    
+    <div class="right">
+        <ul class="navbar">
+            
+            <li class=" "> <a href="login.html">Log In</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Our Services</h1>
+        <div class="row">
+            <div class="service">
+                <i class="fa-solid fa-pen"></i>
+                <h2>Web Design</h2>
+                <p>Process of planning and implementing the plan for design a website </p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Web Development</h2>
+                <p>Creating ,building and maintaining websites and web applications that run online in browser</p>
+            </div>
+
+            <div class="service">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h2>Advertising</h2>
+                <p>Journals , Tech items  and more with Your logo  Promotionals items  Corporate Collection.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-person-chalkboard"></i>
+                <h2>Presentations</h2>
+                <p>Speech meant to imform, inspire, motivate, build goodwill, or present new idea/product</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-wrench"></i>
+                <h2>Construction Design</h2>
+                <p>Process of creating the description of new facility,usually represented by detailed plans</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h2>Best Ideas</h2>
+                <p> An idea that has potential for success, then implemented using a tried and tested process</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-file-invoice"></i>
+                <h2>Documentation</h2>
+                <p>Document which provide proof or evidence or something, or record something</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-headset"></i>
+                <h2>Support 24/7</h2>
+                <p>We will help you ,it happens all the time without ever stopping</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
